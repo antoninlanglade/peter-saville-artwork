@@ -2,7 +2,7 @@ import {Vector, Rectangle, CanvasSpace, Form, Const, Line, Curve} from 'ptjs';
 
 const GLOBAL = 20;
 const NUMBER = 100;
-const LINES = 20;
+const LINES = 30;
 const OFFSET_LINE = 20;
 (function() {
    		
@@ -59,7 +59,7 @@ const OFFSET_LINE = 20;
 	    // draw cardinal curve
 	    for (let j = 0; j < LINES; j++) {
 	    	curve = new Curve().to(lines[j]);
-	    	form.fill( "black" ).stroke( "white", 2 ).polygon(curve.cardinal(10, 0.4));	
+	    	form.fill( "black" ).stroke( "white", 2 ).polygon(curve.cardinal(10, 0.4), false);	
 	    }
 	
 	  },
