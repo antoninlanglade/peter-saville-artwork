@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function(){
 				}
 
 				x = (center.x - pointNumber*unit.x/2) + unit.x * i;
-				y = (center.y - OFFSET_LINE * lineNumber / 2)- Math.abs(Math.random() * multiply) * unit.y + j * OFFSET_LINE;
+				y = (center.y - OFFSET_LINE * lineNumber / 2)- Math.abs(Math.random() * multiply) * 7 + j * OFFSET_LINE;
 				
 				if (i === 0 || i === pointNumber-1) {
 					y = (center.y - OFFSET_LINE * lineNumber / 2)+ j * OFFSET_LINE;
