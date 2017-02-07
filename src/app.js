@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function(){
 				points[i].push(new Vector(point.x.current, point.y.current));
 			}
 			curve = new Curve().to(points[i]);
-			form.fill( "black" ).stroke( "white", 2 ).polygon(curve.cardinal(), false);	
+			form.fill( "black" ).stroke( "white", 2 ).polygon(curve.cardinal(10, 0.4), false);	
 		}
 	  }
 	});
