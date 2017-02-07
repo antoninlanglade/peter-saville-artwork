@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base href="{{compiler.publicPath}}">
+  <title>{{title}}</title>
+  <meta name="description" content="{{description}}" />
+  {{#if compiler.isProduction}}
+  <link rel="stylesheet" href="bundle-{{compiler.hash}}.css">
+  {{/if}}
+</head>
+<body>
+    <canvas id="stage"></canvas>
+    <div id="title">Joy Division</div>
+    <div id="subtitle">Unknown pleasures</div>
+    <div id="download">Download</div>
+  <script src="bundle-{{compiler.hash}}.js"></script>
+</body>
+</html>
